@@ -235,7 +235,7 @@ public class WeightedLinearRegression {
             w[i] = 1.0;
         }
 
-        Entry<Double, Double> res = regress1d(x, y, w);
+        Entry<Double, Double> res = regress1d(y, x, w);
         System.out.println("m = " + res.getKey() + "; c = " + res.getValue());
     }
 }
