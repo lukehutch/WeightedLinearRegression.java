@@ -193,7 +193,7 @@ public class WeightedLinearRegression {
      * 
      * @return an {@link Entry} consisting of {@code (c, m)} from the formula {@code y = mx + c}.
      */
-    public static Entry<Double, Double> regress1d(double[] x, double[] y, double[] w) {
+    public static Entry<Double, Double> regress1d(double[] y, double[] x, double[] w) {
         if (x.length == 0) {
             throw new IllegalArgumentException("Need more than 0 points");
         }
